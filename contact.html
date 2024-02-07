@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAiA BARBERSHOP</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary pb-3 text-uppercase"
+      id="home-page"
+    >
+      <div class="container" id="navbar-container">
+        <a class="navbar-brand" href="./index.html">Kaia Barbershop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-secondary"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Team
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./about.html">Jack</a></li>
+                <li><a class="dropdown-item" href="./about.html">Henry</a></li>
+                <li>
+                  <a class="dropdown-item" href="./about.html">Oliver</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Haircuts</a></li>
+                <li><a class="dropdown-item" href="#">Beard</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Colouring</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- contact form-->
+
+    <div class="container rounded py-5 mt-5 bg-light">
+      <div class="text-center mt-5">
+        <i class="fa-solid fa-envelope fa-3x contact-icon"></i>
+        <h1 class="text-center mt-3">Contact Us</h1>
+        <p class="text-center lead mt-3 mb-5">We'd love to hear from you</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-8 col-xs-8">
+          <!-- name input -->
+          <form action="">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Full Name"
+              />
+              <label for="floatingInput"><em>Full Name</em></label>
+            </div>
+            <!-- email input -->
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="example@mail.com"
+              />
+              <label for="email"><em>Email Address</em></label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="tel-no"
+                placeholder="Tel No"
+              />
+              <label for="tel-no"><em>Phone Number</em></label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="customer-comments"
+                value="customer-comments"
+                style="height: 100px"
+              ></textarea>
+              <label for="customer-comments">Comments</label>
+            </div>
+            <div class="d-grid">
+              <button
+                class="btn btn-primary btn-lg mt-5"
+                id="submitButton"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section-->
+    <div class="container mt-5 pt-5">
+      <div class="row d-flex justify-content-center text-center">
+        <div class=" col-lg-3 col-md-6 col-sm-12 col-xs-12 ">
+          <i class="fa-solid fa-3x fa-phone mb-3 contact-icon"></i>
+          <h2 class="mt-2">Call Us</h2>
+          <p class="lead">
+            Call us during normal business <br> hours at +44 7777 88 999
+          </p>
+        </div>
+        <div class=" col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <i class="fa-brands fa-3x fa-whatsapp mb-3 contact-icon"></i>
+          <h2 class="mt-2">Chat Us</h2>
+          <p class="lead">
+            Chat with us on Whatsapp <br />
+            at +44 7777 88 999
+          </p>
+        </div>
+        <div class=" col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <i class="fa-solid fa-location-dot fa-3x mb-3 contact-icon"></i>
+          <h2 class="mt-2">Visit Us</h2>
+          <p class="lead">Visit our shop at <br />1 High St, Crawley</p>
+        </div>
+        <div class=" col-lg-3 col-md-6 col-sm-12 col-xs-12">
+          <i class="fa-sharp fa-solid fa-share fa-3x mb-3 contact-icon"></i>
+          <h2 class="mt-2">Spread the Word</h2>
+          <p class="lead">Share our website with your  friends and family</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <section class="p-3 pt-0 footer-section">
+      <div class="row d-flex align-items-center">
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8 text-center text-md-start">
+          <!-- Copyright -->
+          <div class="p-3 text-white">© 2024 Copyright: Emrah Şenköy</div>
+          <!-- Copyright -->
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+          <!-- Facebook -->
+          <a
+            href="https://www.facebook.com/kaiabarbers/"
+            class="btn btn-outline-light btn-floating m-1"
+            class="text-white"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            class="text-white"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            href="https://maps.app.goo.gl/YSYQ9qZCX8iMzGL3A"
+            class="btn btn-outline-light btn-floating m-1"
+            class="text-white"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/kaiabarbers/"
+            class="btn btn-outline-light btn-floating m-1"
+            class="text-white"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
